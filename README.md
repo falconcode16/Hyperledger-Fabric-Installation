@@ -4,7 +4,7 @@ Hey there! This is <a href="https://www.linkedin.com/in/rohit-patil-06a5261b6/" 
 
 This must be done in **Ubuntu Terminal** :
 
-Let's start with some harmless fun - we're going to make /etc/hosts a little more open-minded. Don't worry, we're not trying to change its political views or anything, we're just giving it some extra permissions. So, type in the following commands:
+Let's start with some harmless fun - we're going to make /etc/hosts a little more open-minded. Don't worry, we're not trying to change its political views or anything, we're just giving it some extra permissions. So, type in the following commands one by one:
 
 
 ```
