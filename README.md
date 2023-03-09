@@ -16,12 +16,12 @@ Now that we've convinced /etc/hosts to be a little more flexible, let's introduc
 
 ```
 sudo apt install curl 
-sudo apt-get update
+
 ```
 Now that curl has introduced us to some new friends, let's invite them over for a little party. We can install them separately, or we can use a single command to bring them all together:
 
 ```
-sudo apt-get install git curl docker.io docker-compose nodejs npm 
+sudo apt-get install git docker.io docker-compose nodejs npm 
 sudo chmod 777 /var/run/docker.sock
 ```
 Now that our new friends are all settled in, it's time to introduce them to our project. We're going to clone it from GitHub using the following commands:
