@@ -28,7 +28,7 @@ Now that our new friends are all settled in, it's time to introduce them to our 
 
 ```
 git config --global core.autocrlf false
-git config --global core.autocrlf false 
+ 
 ```
 Now, it's time to run the script that will get things rolling:
 
