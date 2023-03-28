@@ -46,3 +46,77 @@ fabric-samples/first-network$ ./byfn.sh up
 ```
 
 Wait for the BIG END in your terminal and that's it! You've successfully installed Hyperledger Fabric, and you've had a few laughs along the way. Remember to always treat your files with kindness and understanding, and they'll return the favor. Happy blockchain-ing!
+
+
+# Chaincode Execution
+
+When you go into the directory of fabric-samples/chaincode, you will get wide range of sample chaincodes available to execute.
+
+```console
+$ cd fabric-samples/chaincode
+$ ls
+abac  chaincode_example02  fabcar  marbles02  marbles02_private  sacc
+
+```
+Chaincode example of fabcar. Go into ```fabric-samples/chaincode/fabcar/javascript``` Directory.
+```console
+fabric-samples/chaincode/fabcar/javascript$ ls
+index.js  lib  node_modules  package.json
+
+fabric-samples/chaincode/fabcar/javascript/lib$
+fabcar.js
+```
+
+
+You can view this chaincode in your IDE (vs code) or using ```vi fabcar.js```
+
+Now cd back to ```fabric-sample```.
+
+For sample we will use the Fabcar chaincode. MAKE SURE you are in ```fabric-samples/fabcar``` directory.
+
+```console
+$ cd fabric-samples/fabcar
+$ ls
+java  javascript  javascript-low-level  startFabric.sh  typescript
+
+```
+You can use any of your preferred language to write Chaincode(aka Smart Contract).
+To select the preferred vi or you can open your VS code or any IDE.
+
+```
+fabric-samples/fabcar$ vi startFabric.sh
+
+```
+In line no. 13, change the language in ```CC_SRC_LANGUAGE=${1:-"go"}``` to your preferred language. For example I want to change it to javascript so it will be ```CC_SRC_LANGUAGE=${1:-"javascript"}```
+
+
+<img src="git.jpg" alt="Alt text" width="900" height="500">
+
+ Now you can execute the chaincode following the below commands after running,
+ ```
+ fabric-samples/fabcar$ sudo ./startFabric.sh
+
+ ```
+ ```console
+ JavaScript:
+
+  Start by changing into the "javascript" directory:
+    cd javascript
+
+  Next, install all required packages:
+    npm install
+
+  Then run the following applications to enroll the admin user, and register a new user
+  called user1 which will be used by the other applications to interact with the deployed
+  FabCar contract:
+    node enrollAdmin
+    node registerUser
+
+  You can run the invoke application as follows. By default, the invoke application will
+  create a new car, but you can update the application to submit other transactions:
+    node invoke
+
+  You can run the query application as follows. By default, the query application will
+  return all cars, but you can update the application to evaluate other transactions:
+    node query
+```
