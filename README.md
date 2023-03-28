@@ -97,6 +97,7 @@ In line no. 13, change the language in ```CC_SRC_LANGUAGE=${1:-"go"}``` to your 
  fabric-samples/fabcar$ sudo ./startFabric.sh
 
  ```
+ After execution of this script you can run the following command to execute transaction.
  ```console
  JavaScript:
 
