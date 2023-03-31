@@ -35,6 +35,7 @@ Now, it's time to run the script that will get things rolling:
 ```
 sudo curl -sSL http://bit.ly/2ysbOFE | bash -s 1.4.4
 ```
+CAUTION: If you get ```Connection refused``` error please you the DNS to 8.8.8.8, follow this [link](https://linux.how2shout.com/how-to-set-dns-nameserver-on-ubuntu-22-04-lts-jammy/) 
 Once the script is done, we'll head over to our new project folder and create our first network. It's like having a housewarming party, but for a new network:
 
 ```
